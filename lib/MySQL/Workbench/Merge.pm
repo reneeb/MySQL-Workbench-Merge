@@ -298,7 +298,7 @@ is newer...
 
 =head2 new
 
-creates a new object of MySQL::Workbench::Merge. You can pass some parameters
+Creates a new object of MySQL::Workbench::Merge. You can pass some parameters
 to new:
 
     my $foo = MySQL::Workbench::Merge->new(
