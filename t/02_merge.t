@@ -56,7 +56,6 @@ my $base = dirname __FILE__;
 
     is $error, '';
     diag $target;
-    die 'hallo';
 }
 
 done_testing();
