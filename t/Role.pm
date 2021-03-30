@@ -1,6 +1,6 @@
 package
    MyApp::DB::DBIC_Schema::Result::Role;
-    
+
 use strict;
 use warnings;
 use base qw(DBIx::Class);
