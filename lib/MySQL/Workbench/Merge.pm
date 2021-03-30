@@ -75,7 +75,7 @@ sub merge {
         my $figure = $info->{figure};
 
         $schema->addChild( $node );
-        $diagram->addChild( $figure );
+        $diagram->addChild( $figure ) if $figure;
     }
 
     for my $table ( sort keys %{ $diff{new_columns} || {} } ) {
