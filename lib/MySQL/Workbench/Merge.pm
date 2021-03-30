@@ -75,7 +75,7 @@ print STDERR sprintf "Merge %s into schema\n", $table;
         my $figure = $info->{figure};
 
         $schema->addChild( $node );
-        $diagram->addChild( $figure );
+        $diagram->addChild( $figure ) if $figure;
     }
 
     for my $table ( sort keys %{ $diff{new_columns} || {} } ) {
