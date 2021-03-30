@@ -322,15 +322,15 @@ and new relations:
     New tables:
       + sessions
       + jobs
-    
+
     New columns:
       + users
          + age
-    
+
     Changed columns:
       + users
          + username: varchar(255)
-    
+
     New relations:
       + users -> sessions
 
