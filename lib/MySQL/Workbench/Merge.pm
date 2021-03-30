@@ -69,7 +69,7 @@ sub merge {
     my ($diagram)     = $dom->documentElement->findnodes( $diagram_xpath );
 
     for my $table ( sort keys %{ $diff{new_tables} || {} } ) {
-print STDERR sprintf "Merge %s into schema\n", $table;
+        print STDERR sprintf "Merge %s into schema\n", $table;
         my $info   = $diff{new_tables}->{$table};
         my $node   = $info->{node};
         my $figure = $info->{figure};
@@ -85,7 +85,7 @@ print STDERR sprintf "Merge %s into schema\n", $table;
             my $xpath    = sprintf './/value[@id="%s"]/value[@content-struct-name="db.mysql.Column"]',
                 $table_id;
 
-print STDERR "TABLE ID: $table_id\n";
+            print STDERR "TABLE ID: $table_id\n";
 
             my ($schema) = $dom->documentElement->findnodes( $xpath );
             $schema->addChild( $node );
